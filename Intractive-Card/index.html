@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Card</title>
+</head>
+<body>
+    <div class="main">
+        <div class="images">
+            <img src="./img/card-logo.svg" alt="logo" class="logo">
+            <div class="text-card">
+                <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+                <div class="numbers">
+                    <p id="card-name" class="card-name">Yolchiyev Abduqodir</p>
+                    <span> <p id="card-valid" class="card-name">00/</p> <p class="card-name" id="card-valid1"> 00</p></span>
+                </div>
+            </div>
+            <img src="./img/bg-card-front.png" alt="front-image" class="photo1">
+            <p id="cvc" class="cvc">000</p>
+            <img src="./img/bg-card-back.png" alt="back-image" class="photo2">
+        </div>
+        <form>
+            <label for="input-name">CardHolder Name <br>
+                <input type="text" class="input-data" id="input-name" placeholder="Yolchiyev Abduqodir">
+            </label>
+            <label for="input-number">Card Number<br>
+                <input type="text" class="input-data" id="input-number" placeholder="e.g 1234 5678 9123 0000">
+            </label>
+            <div class="input-box">
+                <label for="input-month">Month
+                    <input type="text" placeholder="MM" class="input-numbers" id="input-month">
+                    
+                </label>
+                <label for="input-year">Year
+                <input type="text" placeholder="YY" class="input-numbers" id="input-year"></label>
+                <label for="input-cv">CVC<br>
+                    <input type="text" placeholder="CVC" class="input-numbers input-cvc" id="input-cvc">
+                </label>
+            </div>
+            <button>Confirm</button>  
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
